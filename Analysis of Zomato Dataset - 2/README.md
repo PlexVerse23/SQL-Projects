@@ -1,6 +1,6 @@
 # 🍽️ The Zomato Project — SQL Analytics Case Study
 
-![Zomato Banner](assets/zomato_banner.png)
+![Zomato Banner](assets/zomato_logo.png)
 
 > A SQL-based mini case study that simulates a food-tech platform like Zomato.  
 > We explore user behavior, product performance, gold membership benefits, and a points-based reward system using a **sample dataset**.
@@ -132,4 +132,45 @@ WHERE rn = 1;
   Designed a custom point system based on product pricing (e.g., 5₹ = 1 point). We calculated total points per user and per product, offering insight into loyalty performance by item.
 
 These insights bridge raw transaction data with business value — helping decision-makers understand customer behavior, membership effectiveness, and reward optimization.
+
+---
+
+## 🧠 What I Learned
+
+This project was a great opportunity to apply and deepen my SQL skills in a realistic, business-oriented scenario. Here’s what I gained from the experience:
+
+- **📊 Analytical Thinking:** Learned how to transform business questions into precise SQL queries and extract meaningful insights from transactional data.
+- **🧱 Data Modeling Awareness:** Understood how different tables (users, products, sales, memberships) relate and how to join them meaningfully for layered analysis.
+- **🏷️ Window Functions Mastery:** Practiced using powerful SQL tools like `RANK()`, `DENSE_RANK()`, and `ROW_NUMBER()` for solving sequencing and ranking problems.
+- **🧮 Logic Building for Rewards:** Simulated custom logic such as Zomato points, combining arithmetic and CASE statements — a great exercise in creative SQL.
+
+---
+
+## 📌 Conclusion
+
+Through this project, I was able to:
+
+- Recreate a simplified but realistic Zomato-like ecosystem.
+- Analyze customer behavior before and after joining the loyalty program.
+- Evaluate which products performed best and how user preferences changed with Gold Membership.
+- Simulate a loyalty point system to explore its potential effectiveness.
+
+This exercise mirrors real-world business intelligence work — turning raw transactions into strategic insights.
+
+---
+
+## 🚀 Future Scope
+
+- **Visualization Integration:** The next step is to visualize these insights using tools like **Power BI** or **Tableau**, making the analysis more digestible for non-technical stakeholders.
+- **Bigger Dataset Simulation:** Apply the same queries and logic to larger datasets, possibly with millions of records, to test scalability and performance.
+- **Automation & Reporting:** Build dashboards and automate such analyses to support ongoing product or marketing decisions.
+
+---
+
+## 🙌 Closing Thoughts
+
+This was more than just a SQL practice project — it was a chance to think like a **business analyst**. Every query had a purpose. Every insight told a story. Projects like these build the foundation for real-world analytics roles, and I’m excited to take this learning forward.
+
+Thanks for checking out **The Zomato Project**! 🍽️
+
 
