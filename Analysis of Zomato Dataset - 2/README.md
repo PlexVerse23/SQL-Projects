@@ -65,7 +65,7 @@ Rather than list each query, let's focus on the **key business insights** that e
 - **📊 Most Purchased Product:**  
   We identified the most frequently ordered item on the menu — this helps prioritize popular products in marketing and inventory planning.
 
-  ```sql
+```sql
 SELECT userid, COUNT(product_id) as No_of_Purchases
 FROM sales 
 WHERE product_id = (
@@ -78,16 +78,58 @@ WHERE product_id = (
 GROUP BY userid;
 ```
 
+![Highest Demand Product](assets/most_sold_product.png)
+
 
 - **🎯 Post-Membership Behavior:**  
   Analyzed the first product users purchased after joining the Gold Membership program. Repeated patterns here indicate products that keep users engaged after upgrade.
 
+```sql
+SELECT userid, product_id
+FROM (
+	SELECT s.userid, s.product_id, DENSE_RANK() OVER(PARTITION BY s.userid ORDER BY s.created_date) as rn
+	FROM (
+		SELECT * 
+		FROM sales
+		ORDER BY userid, created_date
+		) AS s
+	JOIN goldusers_signup g ON s.userid = g.userid AND s.created_date>g.gold_signup_date
+	) 
+WHERE rn = 1;
+```
+**Result Set**
+
+| User ID | Product ID |
+|---------|------------|
+| 1       | 3          |
+| 3       | 2          |
+
+*This insight helps identify what products are most appealing to users right after joining the Gold program.*
+
+
 - **⏮️ Pre-Membership Trigger:**  
   Found the last product purchased *before* users became members. If common, this product may have influenced their decision to upgrade — valuable for upsell strategies.
+
+```sql
+SELECT userid, product_id
+FROM (
+	SELECT s.userid, s.product_id, DENSE_RANK() OVER(PARTITION BY s.userid ORDER BY s.created_date DESC) as rn
+	FROM (
+		SELECT * 
+		FROM sales
+		ORDER BY userid, created_date
+		) AS s
+	JOIN goldusers_signup g ON s.userid = g.userid AND s.created_date<=g.gold_signup_date
+	) 
+WHERE rn = 1;
+```
+
+**Result Set**
+
+
 
 - **🏅 Reward Points Simulation:**  
   Designed a custom point system based on product pricing (e.g., 5₹ = 1 point). We calculated total points per user and per product, offering insight into loyalty performance by item.
 
 These insights bridge raw transaction data with business value — helping decision-makers understand customer behavior, membership effectiveness, and reward optimization.
 
----
