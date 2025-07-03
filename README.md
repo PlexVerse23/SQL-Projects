@@ -36,7 +36,7 @@ One of the highlights from this project was identifying the top-paying skills fo
 
 ---
 
-### 📎 [Check out full project here](Analysis of Salary/README.md)
+### 📎 [Check out full project here](Analysis%20of%20Data%20Jobs%20-%201/README.md)
 
 
 ## 📍 Project 2: The Zomato Project — Customer & Product Insights
