@@ -19,11 +19,10 @@ This project dives deep into the world of data analyst job listings, uncovering 
 
 ### 📊 Sample Insight 
 
-![Top Paying Roles and Skills](./2_top_paying_roles_skills.png)
+<div align="center">
+  <img src="Analysis%20of%20Data%20Jobs%20-%201/assets/2_top_paying_roles_skills.png" alt="Top Paying Roles and Skills" width="600">
+</div>
 
-<p align="center">
-  <img src="./assets/2_top_paying_roles_skills.png" alt="Top Paying Skills Chart" width="500"/>
-</p>
 
 One of the highlights from this project was identifying the top-paying skills for remote data analyst jobs. **SQL**, **Python**, and **Tableau** emerged as the most valued by companies like Meta, AT&T, and SmartAsset.
 
@@ -45,6 +44,8 @@ One of the highlights from this project was identifying the top-paying skills fo
 ## 📍 Project 2: The Zomato Project — Customer & Product Insights
 
 This project simulates a food delivery platform's dataset (inspired by Zomato) to analyze customer behavior, product trends, and the impact of loyalty programs like gold memberships.
+
+
 
 The analysis covers:
 
@@ -71,7 +72,7 @@ The analysis covers:
 - Conditional logic using `CASE`
 - Aggregation and date-based filtering
 
-👉 [🔗 Check out the full Zomato project here](./zomato-project/README.md)
+### 📎 [Check out the full Zomato project here](./zomato-project/README.md)
 
 ---
 
