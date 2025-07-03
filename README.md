@@ -17,9 +17,12 @@ This project dives deep into the world of data analyst job listings, uncovering 
 
 ---
 
-### 📊 Sample Insight  
+### 📊 Sample Insight 
+
+![Top Paying Roles and Skills](./2_top_paying_roles_skills.png)
+
 <p align="center">
-  <img src="assets/top_skills_chart.png" alt="Top Paying Skills Chart" width="500"/>
+  <img src="./assets/2_top_paying_roles_skills.png" alt="Top Paying Skills Chart" width="500"/>
 </p>
 
 One of the highlights from this project was identifying the top-paying skills for remote data analyst jobs. **SQL**, **Python**, and **Tableau** emerged as the most valued by companies like Meta, AT&T, and SmartAsset.
