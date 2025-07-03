@@ -45,6 +45,9 @@ One of the highlights from this project was identifying the top-paying skills fo
 
 This project simulates a food delivery platform's dataset (inspired by Zomato) to analyze customer behavior, product trends, and the impact of loyalty programs like gold memberships.
 
+<div align="center">
+  <img src="Analysis%20of%20Zomato%20Dataset%20-%202/assets/zomato_logo.png" alt="Zomato Logo" width="300">
+</div>
 
 
 The analysis covers:
