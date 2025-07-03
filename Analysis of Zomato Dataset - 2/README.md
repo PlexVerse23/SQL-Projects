@@ -133,9 +133,38 @@ WHERE rn = 1;
 **Result Set**
 
 
+| userid | product_id |
+|--------|------------|
+|   1    |     2      |
+|   3    |     2      |
 
-- **🏅 Reward Points Simulation:**  
-  Designed a custom point system based on product pricing (e.g., 5₹ = 1 point). We calculated total points per user and per product, offering insight into loyalty performance by item. Here's why it stood out:
+The repetition of product '2' being the trigger for gold membership is a valuable insight, we can apply this type of analysis to other factors like, total order amount, discount offered on membership or not, etc.
+
+- **🏅 Reward Points Simulation:**
+
+```sql
+SELECT userid, SUM(Zomato_point) as Earned_Points
+FROM (
+		SELECT *, 
+			CASE
+				WHEN product_id=1 THEN total/5
+				WHEN product_id=2 THEN (total/10)*5
+				WHEN product_id=3 THEN total/5
+			END as Zomato_point
+		FROM (
+			SELECT s.userid, s.product_id, SUM(p.price) as total
+			FROM sales s
+			JOIN
+				product p ON s.product_id = p.product_id
+			GROUP BY s.userid, s.product_id
+			ORDER BY userid
+			)
+		)
+GROUP BY userid
+ORDER BY userid;
+```
+
+Designed a custom point system based on product pricing (e.g., 5₹ = 1 point). We calculated total points per user and per product, offering insight into loyalty performance by item. Here's why it stood out:
 
 - **🧠 Logic Building & Customization:**  
   I created a tiered points system where each product had its own conversion logic (e.g., 5₹ = 1 point for some, 10₹ = 5 points for others). This challenged me to think creatively and structure my `CASE` statements effectively.
@@ -151,11 +180,6 @@ WHERE rn = 1;
 
 - **🔁 Scalable Logic:**  
   I now understand how this system could scale in real-life platforms like Zomato or Swiggy, integrating with dashboards and influencing targeted offers.
-
-### 💡 What I Learned
-- Used arithmetic operations + conditional logic (`CASE`) in SQL to simulate a flexible business logic layer.
-- Learned how to **quantify engagement** and turn raw purchase data into **measurable loyalty metrics**.
-- Gained insight into how **custom KPIs** (like points) can be tracked for both users and products.
 
 These insights bridge raw transaction data with business value — helping decision-makers understand customer behavior, membership effectiveness, and reward optimization.
 
