@@ -75,7 +75,7 @@ The analysis covers:
 - Conditional logic using `CASE`
 - Aggregation and date-based filtering
 
-### 📎 [Check out the full Zomato project here](./zomato-project/README.md)
+### 📎 [Check out details about the full Zomato project here](./Analysis%20of%20Zomato%20Dataset%20-%202/README.md)
 
 ---
 
