@@ -1,6 +1,9 @@
 # 🍽️ The Zomato Project — SQL Analytics Case Study
 
-![Zomato Banner](assets/zomato_logo.png)
+<div align="center">
+  <img src="assets/zomato_logo.png" alt="Zomato Logo" width="400"/>
+</div>
+
 
 > A SQL-based mini case study that simulates a food-tech platform like Zomato.  
 > We explore user behavior, product performance, gold membership benefits, and a points-based reward system using a **sample dataset**.
@@ -78,7 +81,10 @@ WHERE product_id = (
 GROUP BY userid;
 ```
 
-![Highest Demand Product](assets/most_sold_product.png)
+<div align="center">
+  <img src="assets/most_sold_product.png" alt="Result Chart" width="400"/>
+</div>
+
 
 
 - **🎯 Post-Membership Behavior:**  
@@ -129,7 +135,27 @@ WHERE rn = 1;
 
 
 - **🏅 Reward Points Simulation:**  
-  Designed a custom point system based on product pricing (e.g., 5₹ = 1 point). We calculated total points per user and per product, offering insight into loyalty performance by item.
+  Designed a custom point system based on product pricing (e.g., 5₹ = 1 point). We calculated total points per user and per product, offering insight into loyalty performance by item. Here's why it stood out:
+
+- **🧠 Logic Building & Customization:**  
+  I created a tiered points system where each product had its own conversion logic (e.g., 5₹ = 1 point for some, 10₹ = 5 points for others). This challenged me to think creatively and structure my `CASE` statements effectively.
+
+- **💼 Real-World Business Application:**  
+  Reward programs are crucial in increasing customer retention. This exercise showed me how to simulate such programs using SQL, helping businesses measure engagement and identify high-performing products in loyalty campaigns.
+
+- **📊 Analytical Depth:**  
+  By analyzing total points earned per user and per product, I could identify:
+  - Which customers are most loyal.
+  - Which products drive repeat purchases and retention.
+  - Potential for bonus campaigns (e.g., double points on low-selling items).
+
+- **🔁 Scalable Logic:**  
+  I now understand how this system could scale in real-life platforms like Zomato or Swiggy, integrating with dashboards and influencing targeted offers.
+
+### 💡 What I Learned
+- Used arithmetic operations + conditional logic (`CASE`) in SQL to simulate a flexible business logic layer.
+- Learned how to **quantify engagement** and turn raw purchase data into **measurable loyalty metrics**.
+- Gained insight into how **custom KPIs** (like points) can be tracked for both users and products.
 
 These insights bridge raw transaction data with business value — helping decision-makers understand customer behavior, membership effectiveness, and reward optimization.
 
