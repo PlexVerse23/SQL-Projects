@@ -1,11 +1,11 @@
-# 📊 SQL Projects Portfolio
+# SQL Projects Portfolio
 
 Welcome to my personal SQL project portfolio!  
 This repository is a growing collection of case studies built using real-world inspired datasets. Each project aims to solve specific business questions using SQL and uncover insights from data using analytical thinking.
 
 ---
 
-## 🗂️ Projects Listed
+## Projects Listed
 
 Below are some of the projects I’ve worked on using SQL. Each one is designed to explore different aspects of data analysis — from customer behavior and product trends to reward systems and salary analysis.
 
@@ -17,7 +17,7 @@ This project dives deep into the world of data analyst job listings, uncovering 
 
 ---
 
-### 📊 Sample Insight 
+### Sample Insight 
 
 <div align="center">
   <img src="Analysis%20of%20Data%20Jobs%20-%201/assets/2_top_paying_roles_skills.png" alt="Top Paying Roles and Skills" width="600">
@@ -28,7 +28,7 @@ One of the highlights from this project was identifying the top-paying skills fo
 
 ---
 
-### 🛠️ Techniques & Tools Used  
+### Techniques & Tools Used  
 - SQL Joins & Aggregations  
 - Common Table Expressions (CTEs)  
 - Window Functions like DENSE_RANK and ROW_NUMBER  
@@ -38,7 +38,7 @@ One of the highlights from this project was identifying the top-paying skills fo
 
 ---
 
-### 📎 [Check out full project here](Analysis%20of%20Data%20Jobs%20-%201/README.md)
+### [Check out full project here](Analysis%20of%20Data%20Jobs%20-%201/README.md)
 
 
 ## 📍 Project 2: The Zomato Project — Customer & Product Insights
@@ -57,7 +57,7 @@ The analysis covers:
 - First & last purchases related to loyalty upgrades  
 - A custom-built **reward point system** based on purchase value and product type
 
-### 🧾 Sample Insight — Most Purchased Products
+### Sample Insight — Most Purchased Products
 
 | product_id | purchases |
 |------------|-----------|
@@ -67,7 +67,7 @@ The analysis covers:
 
 > *Product 2 is the most popular item across all users — a potential driver of customer loyalty or promotions.*
 
-### 🛠️ Techniques Used
+### Techniques Used
 
 - Joins across multiple tables (`JOIN`, `LEFT JOIN`)
 - Ranking with window functions (`DENSE_RANK`, `RANK`)
@@ -75,8 +75,8 @@ The analysis covers:
 - Conditional logic using `CASE`
 - Aggregation and date-based filtering
 
-### 📎 [Check out details about the full Zomato project here](./Analysis%20of%20Zomato%20Dataset%20-%202/README.md)
+### [Check out details about the full Zomato project here](./Analysis%20of%20Zomato%20Dataset%20-%202/README.md)
 
 ---
 
-More projects will be added soon! Stay tuned 🚀
+More projects will be added soon! 
