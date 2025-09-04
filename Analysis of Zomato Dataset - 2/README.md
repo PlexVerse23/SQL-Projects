@@ -29,7 +29,7 @@ We simulate 4 core tables:
 
 ## Tools Used
 
-- **PostgreSQL** – For executing SQL queries
+- **MySQL** – For executing SQL queries
 - **VS Code / DBeaver** – SQL IDE
 - **Git & GitHub** – Version control and code management
 
